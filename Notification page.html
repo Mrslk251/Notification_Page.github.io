@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NOTIFICATION PAGE</title>
+  </head>
+  <body id="body" style="background-color: #212121;">
+    <div class="container">
+      <header>
+        <div class="notif_box">
+          <h2 class="title"><font color="Dark pink">Notifications</font></h2>
+          <span id="notifes"></span>
+        </div>
+    
+        <p id="mark_all"><font color="blue">Mark all as read</font></p>
+             <div>
+      <nav>
+        
+        <img src="./assets/images/sun.webp" id="icon" alt="avatar">
+      </nav>
+    </div>
+      </header>
+      <main>
+        <div class="notif_card unread">
+          <img src="./assets/images/slk.png" alt="avatar" />
+
+          <div class="description">
+            <p class="user_activity">
+              <strong><font color="Sky blue">Shlok Tilokani</font></strong> reacted to your recent post
+              <b>Ek Number!!</b>
+            </p>
+            <p class="time">1m ago</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="./assets/images/bhavishya.png" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong><font color="Sky blue">Bhavishya Bhojwani</font></strong> followed you
+            </p>
+            <p class="time">5m ago</p>
+          </div>
+        </div>
+        <div class="notif_card unread">
+          <img src="./assets/images/dhruvik.png" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong><font color="Sky blue">Dhruvik Fichadiya</font></strong> has joined your group
+              <strong class="link"><font color="green">BCA KE KARIGAR🖥️ </font></strong>
+            </p>
+            <p class="time">1 day ago</p>
+          </div>
+        </div>
+        <div>
+          <div class="notif_card">
+          <div class="message_card">
+            <img
+            src="./assets/images/sujal.png"
+            alt="avatar"
+          />
+          <div class="description">
+            <p class="user_activity">
+              <strong><font color="Sky blue">Sujal Paradasani</font></strong> sent you a message
+            </p>
+            <p class="time">5 days ago</p>
+          </div>
+          </div>
+        </div>
+        <div class="message">
+              <p>
+                @tilokani_meet kal 8:00 baje ka lecture hai
+                    8:30 se pehele aajana..!!😂😂
+              </p>
+            </div>
+        </div>
+        
+        <div class="notif_card">
+          <img src="./assets/images/sakshi.png" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong><font color="Sky blue">Sakshi Bhojwani</font></strong> commented on your picture
+              <p>
+                Aag laga di Aag laga di Aag laga di..🔥🔥
+              </p>
+            </p>
+            <p class="time">1 week ago</p>
+          </div>
+          <img src="./assets/images/post.jpg" class="chess_img" alt="chess" />
+        </div>
+        <div class="notif_card">
+          <img src="./assets/images/meet.png" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong><font color="Sky blue">Meet Tilokani</font></strong> reacted to your recent reel
+              <b>Dhoom Dhadaka Orchestra❤️‍🔥❤️‍🔥</b>
+            </p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="notif_card">
+          <img src="./assets/images/soniya.png" alt="avatar" />
+          <div class="description">
+            <p class="user_activity">
+              <strong><font color="Sky blue">Soniya Budhwani</font></strong> has left group
+              <strong class="link"><font color="green">BCA KE KARIGAR🖥️</font></strong>
+            </p>
+            <p class="time">2 weeks ago</p>
+          </div>
+        </div>
+      </main> 
+    </div>
+   
+
+    <script src="app.js">
+    </script>
+    <script type="text/javascript">
+      var icon=document.getElementById("icon");
+
+      icon.onclick=function(){
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src="./assets/images/moon.webp";
+          var bcolor = document.getElementById("body")
+          bcolor.style.background="#fff"
+        }
+        else{
+          icon.src="./assets/images/sun.webp";
+          var bcolor = document.getElementById("body")
+          bcolor.style.background="#212121"
+        }
+      }
+    </script>
+    </script>
+  </body>
+</html>
